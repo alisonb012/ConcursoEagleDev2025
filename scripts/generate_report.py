@@ -1,8 +1,9 @@
 # scripts/generate_report.py
 import joblib
 import matplotlib.pyplot as plt
-from sklearn.metrics import confusion_matrix
+from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
 import seaborn as sns
+
 
 def generate_performance_report():
     """Genera gráficos y métricas para el reporte"""
