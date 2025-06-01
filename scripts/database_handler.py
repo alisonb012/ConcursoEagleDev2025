@@ -93,3 +93,14 @@ def get_all_data_for_export():
         formatted_data.append(row[:7] + (fecha,))
     
     return formatted_data
+
+def delete_all_data():
+    conn = sqlite3.connect(DB_PATH)
+    c = conn.cursor()
+    
+    # Eliminar primero de 'resultado' por la clave foránea a 'paciente'
+    c.execute("DELETE FROM resultado")
+    c.execute("DELETE FROM paciente")
+    
+    conn.commit()
+    conn.close()
