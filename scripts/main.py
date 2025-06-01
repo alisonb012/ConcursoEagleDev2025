@@ -47,9 +47,9 @@ class MainWindow(QWidget):
         self.btn_export.clicked.connect(self.export_to_powerbi)
         left_layout.addWidget(self.btn_export)
 
-        self.btn_predict_all = QPushButton("Predecir Todos los Pacientes")
-        self.btn_predict_all.clicked.connect(self.predict_all_patients)
-        left_layout.addWidget(self.btn_predict_all)
+        # self.btn_predict_all = QPushButton("Predecir Todos los Pacientes")
+        # self.btn_predict_all.clicked.connect(self.predict_all_patients)
+        # left_layout.addWidget(self.btn_predict_all)
 
         right_layout = QVBoxLayout()
 
